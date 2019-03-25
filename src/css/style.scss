@@ -1,0 +1,108 @@
+$wblue : #114d8d;
+
+html, body {
+  font-family: 'Lato', sans-serif;
+  section {
+    background: #fbfbfb;
+  }
+}
+
+header {
+  height: 650px;
+  color: white;
+  background: url(../img/bg.png) center;
+  background-size: cover;
+  h1 {
+    font-size: 4rem;
+    @media screen and (max-width: 1200px) {
+      font-size: 3rem;
+    }
+    small {
+      display: block;
+      font-size: 0.5em;
+    }
+  }
+}
+
+form {
+  background: white;
+  @media screen and (min-width: 992px) {
+    transform: translateY(-100px);
+  }
+}
+
+.markedList {
+  list-style: none;
+  li {
+    color: #125393;
+    &:before {
+      content: "✓";
+      margin-right: 0.25rem;
+    }
+  }
+  @media screen and (max-width: 768px){
+    padding: 0;
+  }
+}
+
+.subscribe {
+  background: linear-gradient(45deg, #1464a7, #0e3461);
+  color: white;
+}
+
+.containerTwo {
+  background: #f7f7f7;
+  .imgStock {
+    background: white;
+    div {
+      background: url(../img/Stock.jpg) center no-repeat; 
+      height: 100%; 
+      background-size: cover;
+    }
+  }
+  .card {
+    &.card-blue {
+      color: white !important;
+      background: $wblue;
+      .btn-link {
+        color: inherit;
+      }
+    }
+    &.card-white {
+      background: white;
+    }
+    border-radius: 0;
+    border: none;
+    p {
+    font-size: 2rem;
+    }
+  }
+}
+
+footer {
+  background: #020a2e;
+  .row > div {
+    background: red;
+  }
+  ul {
+    list-style: none; 
+    li {
+      color: white;
+      &:first-child {
+        padding-bottom: 1rem;
+      }
+      h5 {
+        font-weight: bold;
+      }
+      input {
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid;
+        color: inherit;
+        &::placeholder {
+          color: inherit;
+        }
+      }
+    }
+  }
+}

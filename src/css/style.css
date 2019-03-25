@@ -1,0 +1,81 @@
+@charset "UTF-8";
+html, body {
+  font-family: 'Lato', sans-serif; }
+  html section, body section {
+    background: #fbfbfb; }
+
+header {
+  height: 650px;
+  color: white;
+  background: url(../img/bg.png) center;
+  background-size: cover; }
+  header h1 {
+    font-size: 4rem; }
+    @media screen and (max-width: 1200px) {
+      header h1 {
+        font-size: 3rem; } }
+    header h1 small {
+      display: block;
+      font-size: 0.5em; }
+
+form {
+  background: white; }
+  @media screen and (min-width: 992px) {
+    form {
+      transform: translateY(-100px); } }
+
+.markedList {
+  list-style: none; }
+  .markedList li {
+    color: #125393; }
+    .markedList li:before {
+      content: "✓";
+      margin-right: 0.25rem; }
+  @media screen and (max-width: 768px) {
+    .markedList {
+      padding: 0; } }
+
+.subscribe {
+  background: linear-gradient(45deg, #1464a7, #0e3461);
+  color: white; }
+
+.containerTwo {
+  background: #f7f7f7; }
+  .containerTwo .imgStock {
+    background: white; }
+    .containerTwo .imgStock div {
+      background: url(../img/Stock.jpg) center no-repeat;
+      height: 100%;
+      background-size: cover; }
+  .containerTwo .card {
+    border-radius: 0;
+    border: none; }
+    .containerTwo .card.card-blue {
+      color: white !important;
+      background: #114d8d; }
+      .containerTwo .card.card-blue .btn-link {
+        color: inherit; }
+    .containerTwo .card.card-white {
+      background: white; }
+    .containerTwo .card p {
+      font-size: 2rem; }
+
+footer {
+  background: #020a2e; }
+  footer .row > div {
+    background: red; }
+  footer ul {
+    list-style: none; }
+    footer ul li {
+      color: white; }
+      footer ul li:first-child {
+        padding-bottom: 1rem; }
+      footer ul li h5 {
+        font-weight: bold; }
+      footer ul li input {
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid;
+        color: inherit; }
+        footer ul li input::placeholder {
+          color: inherit; }
